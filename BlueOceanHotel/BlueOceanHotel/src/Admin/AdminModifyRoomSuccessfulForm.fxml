@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneID" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B5BFE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminModifyRoomSuccessfulFormController">
+   <children>
+      <ImageView fitHeight="224.0" fitWidth="329.0" layoutX="271.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images/13446480_5258235-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="37.0" layoutY="49.0" prefHeight="317.0" prefWidth="251.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="73.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you!">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="35.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room update successful">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Group layoutX="71.0" layoutY="33.0">
+               <children>
+                  <AnchorPane prefHeight="109.0" prefWidth="109.0" style="-fx-background-radius: 100; -fx-background-color: white;" />
+                  <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/images/png-clipart-round-green-check-mark-illustration-check-mark-bottle-material-green-tick-miscellaneous-angle-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Button layoutX="22.0" layoutY="260.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="43.0" prefWidth="208.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;" text="Go back">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Icons/arrow_back_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Button layoutX="467.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHomeButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Admin">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/admin_panel_settings_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

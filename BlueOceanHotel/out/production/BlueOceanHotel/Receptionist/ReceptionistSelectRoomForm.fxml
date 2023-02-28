@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="receptioistSelectRoomFormID" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B5BFE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Receptionist.ReceptionistSelectRoomFormController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#receptioistSelectRoomFormGoBackButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Go back">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/arrow_back_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="467.0" layoutY="14.0" mnemonicParsing="false" onAction="#receptioistSelectRoomFormGoHomeButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Receptionist">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/person_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Group layoutX="46.0" layoutY="75.0">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="13.0" prefHeight="120.0" prefWidth="176.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+            <Button layoutX="16.0" mnemonicParsing="false" onAction="#receptionistSingleRoomButtonOnAction" prefHeight="120.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: #DBB690;">
+               <graphic>
+                  <ImageView fitHeight="108.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/images/luxury-bedroom-hotel.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#005dff" />
+         </effect>
+      </Group>
+      <Group layoutX="357.0" layoutY="241.0">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="13.0" prefHeight="120.0" prefWidth="176.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+            <Button layoutX="16.0" mnemonicParsing="false" onAction="#receptionistQuadRoomlButtonOnAction" prefHeight="120.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: #A5ABA1;">
+               <graphic>
+                  <ImageView fitHeight="117.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/images/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#005dff" />
+         </effect>
+      </Group>
+      <Group layoutX="357.0" layoutY="75.0">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="13.0" prefHeight="120.0" prefWidth="176.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+            <Button layoutX="16.0" mnemonicParsing="false" onAction="#receptionistDoubleRoomButtonOnAction" prefHeight="120.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: #6F573F;">
+               <graphic>
+                  <ImageView fitHeight="104.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/images/interior-bedroom-white-creamy-tones.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#005dff" />
+         </effect>
+      </Group>
+      <Text layoutX="83.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single rooms ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="392.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double rooms">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="88.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Triple rooms">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Group layoutX="46.0" layoutY="241.0">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="13.0" prefHeight="120.0" prefWidth="176.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+            <Button layoutX="16.0" mnemonicParsing="false" onAction="#receptionistTripleRoomButtonOnAction" prefHeight="120.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: #CDBEA5;">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/images/modern-luxury-bedroom-suite-bathroom.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#005dff" />
+         </effect>
+      </Group>
+      <Text layoutX="397.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quad  rooms">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="206.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select room type">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

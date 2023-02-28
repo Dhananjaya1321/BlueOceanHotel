@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminHomeFormID" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminHomeFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images/7854057_1014.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutY="167.0" prefHeight="239.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B5BFE2;">
+               <children>
+                  <Group layoutX="15.0" layoutY="25.0">
+                     <children>
+                        <AnchorPane layoutY="17.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+                        <Button layoutX="20.0" mnemonicParsing="false" onAction="#adminRoomsButtonOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/images/13446480_5258235-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                     <effect>
+                        <DropShadow color="#0010ee" />
+                     </effect>
+                  </Group>
+                  <Text layoutX="69.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B5BFE2;" GridPane.columnIndex="2">
+               <children>
+                  <Group layoutX="17.0" layoutY="26.0">
+                     <children>
+                        <AnchorPane layoutY="16.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+                        <Button layoutX="19.0" mnemonicParsing="false" onAction="#adminIncomeReportsButtonOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/images/1311213_313-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                     <effect>
+                        <DropShadow color="#0010ee" />
+                     </effect>
+                  </Group>
+                  <Text layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Reports">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B5BFE2;" GridPane.columnIndex="1">
+               <children>
+                  <Group layoutX="15.0" layoutY="25.0">
+                     <children>
+                        <AnchorPane layoutY="17.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 20;" />
+                        <Button layoutX="20.0" mnemonicParsing="false" onAction="#adminMealPackageButtonOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="160.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/images/3886452_11444-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                     <effect>
+                        <DropShadow color="#0010ee" />
+                     </effect>
+                  </Group>
+                  <Text layoutX="39.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Package">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Text fill="#0d053e" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean Hotel" wrappingWidth="319.9999988079071">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="467.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminLogOutButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="LogOut">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/logout_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

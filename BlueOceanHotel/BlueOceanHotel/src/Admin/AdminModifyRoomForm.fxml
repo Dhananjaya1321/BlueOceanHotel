@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminModifyRoomsFormID" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B5BFE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminModifyRoomFormController">
+   <children>
+      <ImageView fitHeight="239.0" fitWidth="402.0" layoutX="241.0" layoutY="64.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images/13446480_5258235-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminModifyRoomFormGoBackButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Go back">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/arrow_back_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="467.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminModifyRoomFormGoHomeButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Admin">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/admin_panel_settings_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="174.0" layoutY="349.0" mnemonicParsing="false" onAction="#adminUpdateRoomButtonOnAction" prefHeight="37.0" prefWidth="253.0" style="-fx-background-radius: 20;" text="Update">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/upgrade_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="22.0" layoutY="95.0" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="enterRoomID" layoutX="16.0" layoutY="6.0" prefHeight="25.0" prefWidth="218.0" promptText="Room ID" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="26.0" layoutY="293.0" prefHeight="46.0" prefWidth="346.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <TextArea fx:id="typeDescriptionTextAreaID" layoutX="14.0" layoutY="5.0" prefHeight="37.0" prefWidth="315.0" promptText="Description type here" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="22.0" layoutY="156.0" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="enterPriceOfOneNigthID" layoutX="18.0" layoutY="6.0" prefHeight="25.0" prefWidth="218.0" promptText="RS. 0.0" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="22.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change  room ID :" />
+      <Text layoutX="22.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New price of 1 night :" />
+      <Text layoutX="24.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change room type" />
+      <RadioButton fx:id="selectSingleRoomTypeID" layoutX="28.0" layoutY="224.0" mnemonicParsing="false" text="Single rooms">
+         <toggleGroup>
+            <ToggleGroup fx:id="roomTypes" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="selectDoubleRoomTypeID" layoutX="149.0" layoutY="224.0" mnemonicParsing="false" text="double room" toggleGroup="$roomTypes" />
+      <RadioButton fx:id="selectQuadrupleRoomTypeID" layoutX="149.0" layoutY="250.0" mnemonicParsing="false" text="Quadruple room" toggleGroup="$roomTypes" />
+      <RadioButton fx:id="selectTripelRoomTypeID" layoutX="28.0" layoutY="250.0" mnemonicParsing="false" text="Triple room" toggleGroup="$roomTypes" />
+      <Text layoutX="26.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change description for the room :" />
+   </children>
+</AnchorPane>

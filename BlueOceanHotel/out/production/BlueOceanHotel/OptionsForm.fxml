@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="OptionsFormPaneID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OptionsFormController">
+   <children>
+      <ImageView fitHeight="230.0" fitWidth="411.0" layoutX="-86.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@Images/images/7854057_1014.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="230.0" layoutY="-1.0" prefHeight="402.0" prefWidth="373.0" style="-fx-background-color: B5BFE2;">
+         <children>
+            <Text fill="#2543a8" layoutX="140.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LogIn">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="140.0" onAction="#AdminButtonOnAction" prefHeight="38.0" prefWidth="237.0" ripplerFill="#5d6265ed" style="-fx-background-radius: 10; -fx-background-color: white;" text="Admin Account">
+               <effect>
+                  <DropShadow height="35.46" radius="16.58" width="32.86" />
+               </effect>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="275.0" onAction="#ReceptionistButtonOnAction" prefHeight="38.0" prefWidth="237.0" ripplerFill="#5d6265ed" style="-fx-background-radius: 10; -fx-background-color: white;" text="Receptionist Account">
+               <effect>
+                  <DropShadow height="35.46" radius="16.58" width="32.86" />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

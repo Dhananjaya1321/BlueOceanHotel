@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="paneID" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B5BFE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Receptionist.ReceptionistMakeAvailableRoomsMaintananceFormController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#receptioistAvailabilityGoBackButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Go back">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/arrow_back_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="467.0" layoutY="14.0" mnemonicParsing="false" onAction="#receptioistAvalibilityGoHomeButtonOnAction" prefHeight="37.0" prefWidth="119.0" style="-fx-background-radius: 20;" text="Receptionist">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/person_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView layoutX="33.0" layoutY="79.0" prefHeight="301.0" prefWidth="535.0" style="-fx-background-radius: 10;">
+        <columns>
+          <TableColumn fx:id="roomID" prefWidth="111.0" text="Room ID" />
+          <TableColumn fx:id="description" prefWidth="289.0" text="Description" />
+            <TableColumn fx:id="availability" prefWidth="134.0" text="Availability" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="167.0" layoutY="31.0" prefHeight="37.0" prefWidth="266.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="9.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Icons/search_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="39.0" layoutY="6.0" prefHeight="25.0" prefWidth="212.0" promptText="Search room ID" style="-fx-background-color: white;" />
+            <Button layoutX="199.0" layoutY="3.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-radius: 20; -fx-background-color: #16A0F5;" text="Search">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
